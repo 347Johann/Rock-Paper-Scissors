@@ -6,8 +6,8 @@ winMessages = ["TIE", "ROCK CRUSHES SCISSORS", "PAPER WRAPS ROCK", "SCISSORS CUT
 function playerChoice(playerChoice) {
     computerChoice = Math.floor(Math.random() * 3 + 1);
     
-    playerDisplay.innerHTML = `<img src="https://shorturl.at/WU8CN" alt="">PLAYER INPUT: ${(playerChoice === 1) ? "ROCK" : (playerChoice === 2) ? "PAPER" : "SCISSORS"}`;
-    CMPDisplay.innerHTML = `<img src="https://shorturl.at/Ug3tm" alt="">COMPUTER INPUT: ${(computerChoice === 1) ? "ROCK" : (computerChoice === 2) ? "PAPER" : "SCISSORS"}`;
+    playerDisplay.innerHTML = `<img src="Human.png" alt="">PLAYER INPUT: ${(playerChoice === 1) ? "ROCK" : (playerChoice === 2) ? "PAPER" : "SCISSORS"}`;
+    CMPDisplay.innerHTML = `<img src="Computer.png" alt="">COMPUTER INPUT: ${(computerChoice === 1) ? "ROCK" : (computerChoice === 2) ? "PAPER" : "SCISSORS"}`;
 
     if (playerChoice === computerChoice) {
         display.textContent = winMessages[0]; // TIE
