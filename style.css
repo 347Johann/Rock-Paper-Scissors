@@ -1,0 +1,85 @@
+*{
+    text-align: center;
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 20px;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 45px;
+}
+button:hover {
+    background-color: #3b8d3f; /* Slightly darker green on hover */
+}
+#display{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.inputDisplay{
+    font-size: 20px;
+    display: inline;
+    padding: 0;
+    width: 350px;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.inputDisplay-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#displayContainer{
+    border: skyblue 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50VW;
+    margin: auto;
+    margin-top: 25px;
+}
+img{
+    width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .inputDisplay{
+        font-size: 4vw;
+        margin: 30px;
+    }
+    .inputDisplay-Container{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    button{
+        width: 85px;
+        height: 85px;
+    }
+    #display{
+        font-size: 3vw;
+    }
+    #displayContainer{
+        width: 75VW;
+    }
+}
